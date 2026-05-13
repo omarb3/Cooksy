@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>À Table</title>
+<title>Cooksy</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -252,58 +252,58 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--dark)
 .sec-hd p{font-size:.74rem;color:var(--light);margin-top:3px;font-weight:600}
 .rule{height:2px;background:var(--bg);margin:14px 16px}
 /* ── ONBOARDING ── */
-.ob-screen{position:fixed;inset:0;background:var(--dark);z-index:500;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-y:auto;padding:0 0 40px}
+.ob-screen{position:fixed;inset:0;background:var(--bg);z-index:500;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-y:auto;padding:0 0 40px}
 .ob-screen.hidden{display:none}
-.ob-hero{width:100%;background:linear-gradient(150deg,var(--green) 0%,var(--green-d) 60%,#0d5c2e 100%);padding:48px 24px 32px;text-align:center;position:relative;overflow:hidden}
+.ob-hero{width:100%;background:linear-gradient(135deg,var(--green) 0%,var(--green-d) 100%);padding:48px 24px 32px;text-align:center;position:relative;overflow:hidden}
 .ob-hero::before{content:'🍽️';position:absolute;right:-5px;bottom:-10px;font-size:7rem;opacity:.12;transform:rotate(20deg)}
 .ob-hero::after{content:'🥘';position:absolute;left:-5px;top:20px;font-size:4rem;opacity:.1;transform:rotate(-15deg)}
 .ob-logo{font-family:'Nunito',sans-serif;font-size:2.4rem;font-weight:900;color:var(--white);letter-spacing:-.02em;margin-bottom:6px}
 .ob-logo em{font-style:normal;color:var(--amber)}
-.ob-tagline{font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.55}
+.ob-tagline{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.55;font-weight:600}
 .ob-steps-ind{display:flex;gap:6px;justify-content:center;margin:20px 0 0}
-.ob-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.25);transition:all .25s}
+.ob-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.35);transition:all .25s}
 .ob-dot.on{background:var(--amber);width:22px;border-radius:var(--r-pill)}
-.ob-body{width:100%;max-width:420px;padding:28px 22px 0}
+.ob-body{width:100%;max-width:420px;padding:28px 20px 0}
 .ob-step{display:none}
 .ob-step.active{display:block}
-.ob-step-title{font-family:'Nunito',sans-serif;font-size:1.7rem;font-weight:900;color:var(--white);margin-bottom:6px;line-height:1.2}
-.ob-step-sub{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.55;margin-bottom:22px;font-weight:600}
+.ob-step-title{font-family:'Nunito',sans-serif;font-size:1.7rem;font-weight:900;color:var(--dark);margin-bottom:6px;line-height:1.2}
+.ob-step-sub{font-size:.8rem;color:var(--mid);line-height:1.55;margin-bottom:22px;font-weight:600}
 .ob-field{margin-bottom:14px}
-.ob-label{font-family:'Nunito',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:6px;display:block}
-.ob-input{width:100%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.15);border-radius:var(--r-sm);padding:14px 16px;font-family:'Nunito Sans',sans-serif;font-size:.95rem;color:var(--white);outline:none;transition:all .2s}
-.ob-input:focus{border-color:var(--amber);background:rgba(255,184,0,.1)}
-.ob-input::placeholder{color:rgba(255,255,255,.25)}
+.ob-label{font-family:'Nunito',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--light);margin-bottom:6px;display:block}
+.ob-input{width:100%;background:var(--white);border:2px solid var(--border);border-radius:var(--r-sm);padding:14px 16px;font-family:'Nunito Sans',sans-serif;font-size:.95rem;color:var(--dark);outline:none;transition:all .2s;box-shadow:var(--sh)}
+.ob-input:focus{border-color:var(--green);box-shadow:0 0 0 4px rgba(39,174,96,.1)}
+.ob-input::placeholder{color:var(--light)}
 .ob-avatars{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
-.ob-avatar{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.1);border:2.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:1.6rem;cursor:pointer;transition:all .2s}
-.ob-avatar.sel{border-color:var(--amber);background:rgba(255,184,0,.2);transform:scale(1.1)}
+.ob-avatar{width:54px;height:54px;border-radius:50%;background:var(--white);border:2.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.6rem;cursor:pointer;transition:all .2s;box-shadow:var(--sh)}
+.ob-avatar.sel{border-color:var(--green);background:var(--green-l);transform:scale(1.1);box-shadow:0 4px 12px rgba(39,174,96,.25)}
 .ob-cuisines{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
-.ob-cuisine{font-family:'Nunito',sans-serif;padding:9px 15px;border-radius:var(--r-pill);border:2px solid rgba(255,255,255,.15);font-size:.8rem;font-weight:700;color:rgba(255,255,255,.65);cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:5px}
-.ob-cuisine.sel{border-color:var(--amber);color:var(--amber);background:rgba(255,184,0,.12)}
+.ob-cuisine{font-family:'Nunito',sans-serif;padding:9px 15px;border-radius:var(--r-pill);border:2px solid var(--border);font-size:.8rem;font-weight:700;color:var(--mid);cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:5px;background:var(--white);box-shadow:var(--sh)}
+.ob-cuisine.sel{border-color:var(--green);color:var(--green-d);background:var(--green-l)}
 .ob-toggles{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
-.ob-toggle{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.07);border-radius:var(--r-sm);padding:14px 16px;cursor:pointer;transition:all .15s}
-.ob-toggle:hover{background:rgba(255,255,255,.1)}
+.ob-toggle{display:flex;align-items:center;justify-content:space-between;background:var(--white);border-radius:var(--r-sm);padding:14px 16px;cursor:pointer;transition:all .15s;box-shadow:var(--sh);border:2px solid transparent}
+.ob-toggle:hover{border-color:var(--green)}
 .ob-toggle-info{display:flex;align-items:center;gap:10px}
 .ob-toggle-ico{font-size:1.3rem}
-.ob-toggle-name{font-family:'Nunito',sans-serif;font-size:.85rem;color:var(--white);font-weight:700}
-.ob-toggle-desc{font-size:.68rem;color:rgba(255,255,255,.35);margin-top:1px}
-.ob-switch{width:44px;height:26px;border-radius:var(--r-pill);background:rgba(255,255,255,.18);position:relative;transition:all .2s;flex-shrink:0}
-.ob-switch.on{background:var(--amber)}
+.ob-toggle-name{font-family:'Nunito',sans-serif;font-size:.85rem;color:var(--dark);font-weight:800}
+.ob-toggle-desc{font-size:.68rem;color:var(--light);margin-top:1px;font-weight:600}
+.ob-switch{width:44px;height:26px;border-radius:var(--r-pill);background:#ddd;position:relative;transition:all .2s;flex-shrink:0}
+.ob-switch.on{background:var(--green)}
 .ob-switch::after{content:'';position:absolute;width:20px;height:20px;border-radius:50%;background:white;top:3px;left:3px;transition:all .2s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
 .ob-switch.on::after{left:21px}
 .ob-hh-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
-.ob-hh-opt{background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.12);border-radius:var(--r);padding:20px 14px;text-align:center;cursor:pointer;transition:all .2s}
-.ob-hh-opt:hover{border-color:var(--amber)}
-.ob-hh-opt.sel{border-color:var(--amber);background:rgba(255,184,0,.1)}
+.ob-hh-opt{background:var(--white);border:2px solid var(--border);border-radius:var(--r);padding:20px 14px;text-align:center;cursor:pointer;transition:all .2s;box-shadow:var(--sh)}
+.ob-hh-opt:hover{border-color:var(--green)}
+.ob-hh-opt.sel{border-color:var(--green);background:var(--green-l)}
 .ob-hh-ico{font-size:2rem;display:block;margin-bottom:8px}
-.ob-hh-name{font-family:'Nunito',sans-serif;font-size:.85rem;color:var(--white);font-weight:800;margin-bottom:3px}
-.ob-hh-desc{font-size:.68rem;color:rgba(255,255,255,.35);line-height:1.4}
-.ob-code-box{background:rgba(255,184,0,.1);border:2px solid rgba(255,184,0,.4);border-radius:var(--r);padding:20px;text-align:center;margin-bottom:16px}
-.ob-code{font-family:'Nunito',sans-serif;font-size:2.6rem;font-weight:900;color:var(--amber);letter-spacing:.12em}
-.ob-code-hint{font-size:.73rem;color:rgba(255,255,255,.4);margin-top:6px;line-height:1.5}
+.ob-hh-name{font-family:'Nunito',sans-serif;font-size:.85rem;color:var(--dark);font-weight:800;margin-bottom:3px}
+.ob-hh-desc{font-size:.68rem;color:var(--light);line-height:1.4;font-weight:600}
+.ob-code-box{background:var(--amber-l);border:2px solid var(--amber);border-radius:var(--r);padding:20px;text-align:center;margin-bottom:16px}
+.ob-code{font-family:'Nunito',sans-serif;font-size:2.4rem;font-weight:900;color:var(--amber-d);letter-spacing:.12em}
+.ob-code-hint{font-size:.73rem;color:var(--mid);margin-top:6px;line-height:1.5;font-weight:600}
 .ob-status{font-size:.78rem;padding:10px 14px;border-radius:var(--r-sm);margin-bottom:12px;text-align:center;display:none;font-weight:700}
-.ob-status.ok{background:rgba(39,174,96,.15);color:#6fcf97;display:block}
-.ob-status.err{background:rgba(255,107,107,.15);color:#ff6b6b;display:block}
-.ob-status.info{background:rgba(255,184,0,.12);color:var(--amber);display:block}
+.ob-status.ok{background:var(--green-l);color:var(--green-d);display:block}
+.ob-status.err{background:#fff0f0;color:var(--coral);display:block}
+.ob-status.info{background:var(--amber-l);color:var(--amber-d);display:block}
 .sync-bar{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:420px;padding:8px 16px;font-family:'Nunito',sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.05em;text-align:center;z-index:300;transition:all .3s;display:none}
 .sync-bar.show{display:block}
 .sync-bar.syncing{background:var(--amber);color:var(--dark)}
@@ -328,7 +328,7 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--dark)
 <!-- ONBOARDING OVERLAY -->
 <div class="ob-screen" id="ob-screen">
   <div class="ob-hero">
-    <div class="ob-logo"><em>À</em> Table</div>
+    <div class="ob-logo"><em>Cook</em>sy 🍳</div>
     <p class="ob-tagline">Plan your week's dinners together.<br>Swipe, match, cook.</p>
     <div class="ob-steps-ind">
       <div class="ob-dot on" id="ob-dot-0"></div>
@@ -454,7 +454,7 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--dark)
 
 <div id="app">
   <header class="mast">
-    <div class="mast-logo"><em>À</em> Table</div>
+    <div class="mast-logo"><em>Cook</em>sy 🍳</div>
     <div class="mast-meta" id="week-lbl">—</div>
   </header>
 
@@ -468,27 +468,27 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--dark)
 
     <!-- Live member status -->
     <div class="member-status">
-      <div class="ms-chip" id="ms-omar">
-        <div class="ms-avatar" id="ms-omar-avatar">👨</div>
+      <div class="ms-chip" id="ms-me">
+        <div class="ms-avatar" id="ms-me-avatar">👨</div>
         <div class="ms-info">
-          <div class="ms-name" id="ms-omar-name">Omar</div>
-          <div class="ms-state" id="ms-omar-state">Pending</div>
+          <div class="ms-name" id="ms-me-name">Me</div>
+          <div class="ms-state" id="ms-me-state">Pending</div>
         </div>
-        <div class="ms-dot" id="ms-omar-dot"></div>
+        <div class="ms-dot" id="ms-me-dot"></div>
       </div>
-      <div class="ms-chip" id="ms-marta">
-        <div class="ms-avatar" id="ms-marta-avatar">👩</div>
+      <div class="ms-chip" id="ms-partner">
+        <div class="ms-avatar" id="ms-partner-avatar">👩</div>
         <div class="ms-info">
-          <div class="ms-name" id="ms-marta-name">Marta</div>
-          <div class="ms-state" id="ms-marta-state">Pending</div>
+          <div class="ms-name" id="ms-partner-name">Partner</div>
+          <div class="ms-state" id="ms-partner-state">Pending</div>
         </div>
-        <div class="ms-dot" id="ms-marta-dot"></div>
+        <div class="ms-dot" id="ms-partner-dot"></div>
       </div>
     </div>
 
     <div class="prog-grid">
-      <div class="prog-cell" id="pc-omar"><span class="prog-ico" id="pc-omar-ico">👨</span><span class="prog-lbl" id="pc-omar-lbl">Omar's Picks</span><span class="prog-val" id="pv-omar">Pending</span></div>
-      <div class="prog-cell" id="pc-marta"><span class="prog-ico" id="pc-marta-ico">👩</span><span class="prog-lbl" id="pc-marta-lbl">Marta's Picks</span><span class="prog-val" id="pv-marta">Pending</span></div>
+      <div class="prog-cell" id="pc-me"><span class="prog-ico" id="pc-me-ico">👨</span><span class="prog-lbl" id="pc-me-lbl">My Picks</span><span class="prog-val" id="pv-me">Pending</span></div>
+      <div class="prog-cell" id="pc-partner"><span class="prog-ico" id="pc-partner-ico">👩</span><span class="prog-lbl" id="pc-partner-lbl">Their Picks</span><span class="prog-val" id="pv-partner">Pending</span></div>
       <div class="prog-cell" id="pc-match"><span class="prog-ico">✦</span><span class="prog-lbl">Matched</span><span class="prog-val" id="pv-match">—</span></div>
     </div>
     <div class="act-stack">
@@ -1043,33 +1043,66 @@ const CE = {Lebanese:"🫒",Italian:"🍝",Spanish:"🥘",Indian:"🍛",Greek:"�
 const SKIP_ING = new Set(["pasta","rice","flour","milk","eggs","olive oil","salt","pepper","cumin","turmeric","garam masala","cinnamon","allspice","bay leaves","mustard seeds","cumin seeds","chilli flakes","dried oregano","smoked paprika","7-spice blend","7-spice","coriander powder","cardamom pods","paprika","tomato sauce","tomato paste","vegetable stock","chicken stock","coconut milk","yogurt","butter","tahini"]);
 const POOL_SIZE = 20;
 
-// ── FIXED PHOTO MAP — consistent images per meal ──────
-// Curated Pexels photo IDs by cuisine for reliable, beautiful food photos
+// ── FIXED PHOTO MAP — Unsplash CDN URLs (CORS-safe, consistent per meal) ──
 const MEAL_PHOTOS = {
-  // Lebanese
-  1:'1640777',2:'1099680',3:'1640777',4:'410648',5:'1410235',
-  6:'699953',7:'410648',8:'1640777',9:'410648',10:'1099680',
-  11:'699953',12:'1640777',13:'3655916',14:'2673353',15:'1640777',
-  16:'1640777',17:'1640777',18:'1640777',19:'3655916',20:'1410235',
-  // Italian
-  21:'1527603',22:'1279330',23:'1640777',24:'1437267',25:'1279330',
-  26:'1279330',27:'3655916',28:'1527603',
-  // Spanish
-  29:'1640777',30:'2097090',31:'1640777',32:'410648',33:'410648',34:'699953',
-  // Indian
-  35:'699953',36:'2474661',37:'2474661',38:'3655916',39:'2474661',
-  40:'410648',41:'2474661',42:'3655916',
-  // Greek
-  43:'2097090',44:'1279330',45:'1640777',46:'2097090',47:'1640777',48:'1279330',
-  // Mediterranean
-  49:'2097090',50:'1640777',51:'410648',52:'3655916',53:'3655916',54:'699953',
+  1:'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=512&q=80',   // rice and peas
+  2:'https://images.unsplash.com/photo-1600335895229-6e75511892c8?w=512&q=80',   // green beans
+  3:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',       // bean stew
+  4:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=512&q=80',   // baked dish
+  5:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=512&q=80',   // lentils rice
+  6:'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=512&q=80',       // lentil soup
+  7:'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=512&q=80',   // baked meat
+  8:'https://images.unsplash.com/photo-1516100882582-96c3a05fe590?w=512&q=80',   // rice pilaf
+  9:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=512&q=80',   // meatballs
+  10:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',     // okra stew
+  11:'https://images.unsplash.com/photo-1600335895229-6e75511892c8?w=512&q=80',  // green stew
+  12:'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=512&q=80',  // stuffed aubergine
+  13:'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=512&q=80',  // baked fish
+  14:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=512&q=80',     // chicken skewers
+  15:'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=512&q=80',  // hummus
+  16:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=512&q=80',  // fatteh bowl
+  17:'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=512&q=80',  // grilled kafta
+  18:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',     // stuffed zucchini
+  19:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=512&q=80',  // makhlouta
+  20:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=512&q=80',  // vine leaves
+  21:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=512&q=80',  // pasta e fagioli
+  22:'https://images.unsplash.com/photo-1460664863977-922a7f632edd?w=512&q=80',  // cannelloni
+  23:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',     // bean kale soup
+  24:'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=512&q=80',  // mushroom risotto
+  25:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=512&q=80',  // pasta
+  26:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=512&q=80',  // pasta anchovy
+  27:'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=512&q=80',  // baked salmon
+  28:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=512&q=80',  // tuna pasta
+  29:'https://images.unsplash.com/photo-1516100882582-96c3a05fe590?w=512&q=80',  // arroz con pollo
+  30:'https://images.unsplash.com/photo-1525184782196-8e2e4a2c8e0b?w=512&q=80',  // tortilla
+  31:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',     // puchero
+  32:'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=512&q=80',  // braised lamb
+  33:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=512&q=80',  // meatballs
+  34:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',     // lentil chorizo
+  35:'https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=512&q=80',     // dal tadka
+  36:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=512&q=80',  // palak paneer
+  37:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=512&q=80',  // chicken saag
+  38:'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=512&q=80',  // fish curry
+  39:'https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=512&q=80',     // chana masala
+  40:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=512&q=80',  // rogan josh
+  41:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=512&q=80',  // butter chicken
+  42:'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=512&q=80',  // prawn biryani
+  43:'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=512&q=80',  // greek chicken orzo
+  44:'https://images.unsplash.com/photo-1509482560494-4126f8225994?w=512&q=80',  // spanakopita
+  45:'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=512&q=80',  // moussaka
+  46:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=512&q=80',     // souvlaki
+  47:'https://images.unsplash.com/photo-1547592180-85f173990554?w=512&q=80',     // fasolada
+  48:'https://images.unsplash.com/photo-1509482560494-4126f8225994?w=512&q=80',  // baked feta
+  49:'https://images.unsplash.com/photo-1525184782196-8e2e4a2c8e0b?w=512&q=80',  // shakshuka
+  50:'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=512&q=80',  // chicken tagine
+  51:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=512&q=80',  // harissa meatballs
+  52:'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=512&q=80',  // salmon chermoula
+  53:'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=512&q=80',  // sea bream
+  54:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=512&q=80',  // halloumi lentil
 };
 
 function getMealImgUrl(meal){
-  const photoId = MEAL_PHOTOS[meal.id];
-  if(!photoId) return null;
-  // Pexels direct image URL format
-  return `https://images.pexels.com/photos/${photoId}/pexels-photo-${photoId}.jpeg?auto=compress&cs=tinysrgb&w=512&h=320&dpr=1`;
+  return MEAL_PHOTOS[meal.id] || 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=512&q=80';
 }
 
 // ── IMAGE SYSTEM — Pexels API ─────────────────────────
@@ -1130,11 +1163,13 @@ function nav(id){
 
 // ── SKIP VOTING ───────────────────────────────────────
 function recordSkip(who, id){
-  if(!ST.skipVotes[id]) ST.skipVotes[id]={omar:0,marta:0};
+  if(!ST.skipVotes[id]) ST.skipVotes[id]={};
   ST.skipVotes[id][who]=(ST.skipVotes[id][who]||0)+1;
-  if(ST.skipVotes[id].omar>=2 && ST.skipVotes[id].marta>=2){
-    if(!ST.blacklist.includes(id)) ST.blacklist.push(id);
-  }
+  // Blacklist if both household members have skipped twice
+  const votes = ST.skipVotes[id];
+  const members = ST.members||[];
+  const allSkippedTwice = members.length>=2 && members.every(m=>(votes[m]||0)>=2);
+  if(allSkippedTwice && !ST.blacklist.includes(id)) ST.blacklist.push(id);
   saveWeek(); pushBlacklist();
 }
 
@@ -1287,9 +1322,14 @@ let doneTimer = null;
 
 // ── MATCH ─────────────────────────────────────────────
 async function showMatches(){
-  if(!ST.omar||!ST.marta) return;
-  const mySet=new Set(ST.omar);
-  const matched=ST.marta.filter(id=>mySet.has(id));
+  const me = USER.name;
+  const partner = getPartnerName();
+  const myPicks = ST.picks?.[me];
+  const partnerPicks = ST.picks?.[partner];
+  if(!myPicks||!partnerPicks) return;
+
+  const mySet=new Set(myPicks);
+  const matched=partnerPicks.filter(id=>mySet.has(id));
   ST.matches=[...matched];
   const list=document.getElementById('match-list');
   const noM=document.getElementById('no-match');
@@ -1298,7 +1338,7 @@ async function showMatches(){
   if(matched.length<3){
     noM.style.display='block';
     document.getElementById('match-sub').textContent=`${matched.length} mutual match${matched.length!==1?'es':''}`;
-    const extras=[...new Set([...ST.omar,...ST.marta])].filter(id=>!matched.includes(id)).slice(0,3-matched.length);
+    const extras=[...new Set([...myPicks,...partnerPicks])].filter(id=>!matched.includes(id)).slice(0,3-matched.length);
     extras.forEach(id=>{ if(!ST.matches.includes(id)) ST.matches.push(id); });
     wc.innerHTML=`<div class="wc-notice">Individual picks have been added to reach three meals.</div>`;
   } else {
@@ -1483,11 +1523,11 @@ function clearChk(){ ST.checked={}; saveWeek(); renderShop(); }
 
 // ── HISTORY + PLAN SUMMARY ────────────────────────────
 function saveHistory(){
-  const h=JSON.parse(localStorage.getItem('at4_h')||'[]');
+  const h=JSON.parse(localStorage.getItem('cs_h')||'[]');
   const existing=h.findIndex(x=>x.wk===ST.weekKey);
   const entry={wk:ST.weekKey, meals:ST.matches.map(id=>{const m=getMeal(id);return m?m.name:'';}).filter(Boolean)};
   if(existing>=0) h[existing]=entry; else h.unshift(entry);
-  localStorage.setItem('at4_h',JSON.stringify(h.slice(0,4)));
+  localStorage.setItem('cs_h',JSON.stringify(h.slice(0,4)));
 }
 
 function renderHistory(){
@@ -1518,7 +1558,7 @@ function renderHistory(){
 
   // Past weeks
   const body=document.getElementById('hist-body');
-  const h=JSON.parse(localStorage.getItem('at4_h')||'[]');
+  const h=JSON.parse(localStorage.getItem('cs_h')||'[]');
   const pastWeeks=h.filter(e=>e.wk!==ST.weekKey);
   if(!pastWeeks.length){
     body.innerHTML=`<div class="empty"><span class="ico">◷</span><h3>No past weeks yet</h3><p>Complete your first week's plan and it will appear here.</p></div>`;
@@ -1550,7 +1590,7 @@ function renderBlacklist(){
 
 function restoreMeal(id){
   ST.blacklist=ST.blacklist.filter(x=>x!==id);
-  if(ST.skipVotes[id]) ST.skipVotes[id]={omar:0,marta:0};
+  if(ST.skipVotes[id]) ST.skipVotes[id]={};
   saveWeek(); renderBlacklist();
 }
 
@@ -1643,13 +1683,12 @@ async function pullPlan(){
 async function pushBlacklist(){
   if(!USE_BACKEND) return;
   try {
-    for(const entry of Object.entries(ST.skipVotes)){
+    for(const [mealId, votes] of Object.entries(ST.skipVotes)){
       await SB.upsert('blacklist',{
         household_id: USER.householdId,
-        meal_id: parseInt(entry[0]),
-        omar_skips: entry[1].omar||0,
-        marta_skips: entry[1].marta||0,
-        is_blacklisted: ST.blacklist.includes(parseInt(entry[0]))
+        meal_id: parseInt(mealId),
+        skip_votes: votes,
+        is_blacklisted: ST.blacklist.includes(parseInt(mealId))
       });
     }
   } catch(e){}
@@ -1659,13 +1698,16 @@ async function pollPartnerStatus(){
   if(!USE_BACKEND) return;
   const rows = await pullPicks();
   if(!rows) return;
-  const partnerName = USER.name === 'omar' ? 'marta' : 'omar';
-  const partnerRow = rows.find(r => r.user_name === partnerName);
-  if(partnerRow && !ST[partnerName]){
-    ST[partnerName] = partnerRow.kept_ids;
+  const partner = getPartnerName();
+  const partnerRow = rows.find(r=>r.user_name===partner);
+  if(partnerRow && !ST.picks?.[partner]){
+    if(!ST.picks) ST.picks={};
+    ST.picks[partner] = partnerRow.kept_ids;
+    if(!ST.members) ST.members=[];
+    if(!ST.members.includes(partner)) ST.members.push(partner);
     saveWeek(); updateHome();
-    // Both done — animate the match button
-    if(ST.omar && ST.marta){
+    const myPicks = ST.picks?.[USER.name];
+    if(myPicks && ST.picks[partner]){
       document.getElementById('btn-match').classList.add('pulse');
     }
   }
@@ -1685,12 +1727,12 @@ let USER = {
 let OB = { step: 0, hhMode: 'create' };
 
 function loadUser(){
-  const saved = JSON.parse(localStorage.getItem('at5_user')||'null');
+  const saved = JSON.parse(localStorage.getItem('cs_user')||'null');
   if(saved){ USER = saved; }
 }
 
 function saveUser(){
-  localStorage.setItem('at5_user', JSON.stringify(USER));
+  localStorage.setItem('cs_user', JSON.stringify(USER));
 }
 
 // ── ONBOARDING LOGIC ──────────────────────────────────
@@ -1810,6 +1852,8 @@ async function joinHousehold(){
 function finishOnboarding(){
   USER.isSetup = true;
   saveUser();
+  // Store this user's profile so partner devices can show their avatar
+  localStorage.setItem(`cs_member_${USER.householdId}_${USER.name}`, JSON.stringify({avatar:USER.avatar, name:USER.name}));
   document.getElementById('ob-screen').classList.add('hidden');
   initApp();
 }
@@ -1838,24 +1882,24 @@ function getPool(weekKey) {
 }
 
 function savePersist() {
-  localStorage.setItem('at5_p', JSON.stringify({bl:ST.blacklist,sv:ST.skipVotes}));
+  localStorage.setItem('cs_p', JSON.stringify({bl:ST.blacklist,sv:ST.skipVotes}));
 }
 
 function loadState() {
   const weekKey = wk();
-  const per = JSON.parse(localStorage.getItem('at5_p')||'{}');
-  const saved = JSON.parse(localStorage.getItem(`at5_w_${weekKey}_${USER.householdId}`)||'null');
+  const per = JSON.parse(localStorage.getItem('cs_p')||'{}');
+  const saved = JSON.parse(localStorage.getItem(`cs_w_${weekKey}_${USER.householdId}`)||'null');
   if (saved) {
     ST = {...saved, blacklist:per.bl||[], skipVotes:per.sv||{}};
   } else {
-    ST = {weekKey, pool:[], omar:null, marta:null, matches:[], plan:{}, checked:{}, shopList:{}, blacklist:per.bl||[], skipVotes:per.sv||{}};
+    ST = {weekKey, pool:[], picks:{}, matches:[], plan:{}, checked:{}, shopList:{}, members:[], blacklist:per.bl||[], skipVotes:per.sv||{}};
     ST.pool = getPool(weekKey);
   }
   document.getElementById('week-lbl').textContent = weekKey.replace('-W','· Wk ');
 }
 
 function saveWeek() {
-  localStorage.setItem(`at5_w_${ST.weekKey}_${USER.householdId}`, JSON.stringify(ST));
+  localStorage.setItem(`cs_w_${ST.weekKey}_${USER.householdId}`, JSON.stringify(ST));
   savePersist();
 }
 
@@ -1871,7 +1915,13 @@ async function finishSwipe(){
   document.getElementById('sw-ctrl').style.display='none';
   const banner=document.getElementById('done-banner'); banner.style.display='block';
   document.getElementById('done-sub-txt').textContent=`You selected ${sess.kept.length} meal${sess.kept.length!==1?'s':''}`;
-  ST[sess.who] = sess.kept;
+  if(!ST.picks) ST.picks={};
+  ST.picks[sess.who]=sess.kept;
+  // Track members
+  if(!ST.members) ST.members=[];
+  if(!ST.members.includes(sess.who)) ST.members.push(sess.who);
+  // Save partner avatar info for display
+  localStorage.setItem(`cs_member_${USER.householdId}_${USER.name}`, JSON.stringify({avatar:USER.avatar, name:USER.name}));
   saveWeek();
   await pushPicks(sess.who, sess.kept);
   updateHome();
@@ -1881,58 +1931,69 @@ async function finishSwipe(){
 
 // ── HOME — updated to use USER ─────────────────────────
 function updateHome(){
-  // Update member names from USER profile
-  const omarName = USER.name === 'omar' ? USER.name : 'Omar';
-  const martaName = USER.name === 'marta' ? USER.name : 'Marta';
+  const me = USER.name;
+  const partner = getPartnerName();
+  const myPicks = ST.picks?.[me] ?? null;
+  const partnerPicks = ST.picks?.[partner] ?? null;
+
+  // Me chip
+  document.getElementById('ms-me-avatar').textContent = USER.avatar||'👤';
+  document.getElementById('ms-me-name').textContent = cap(me)||'Me';
+  document.getElementById('ms-me-state').textContent = myPicks!==null ? `✓ ${myPicks.length} kept` : 'Not swiped yet';
+  document.getElementById('ms-me-state').className = `ms-state${myPicks!==null?' done':''}`;
+  document.getElementById('ms-me-dot').className = `ms-dot${myPicks!==null?' active':' pending'}`;
+
+  // Partner chip
+  const partnerInfo = getPartnerInfo();
+  document.getElementById('ms-partner-avatar').textContent = partnerInfo.avatar;
+  document.getElementById('ms-partner-name').textContent = cap(partner)||'Partner';
+  document.getElementById('ms-partner-state').textContent = partnerPicks!==null ? `✓ ${partnerPicks.length} kept` : 'Waiting…';
+  document.getElementById('ms-partner-state').className = `ms-state${partnerPicks!==null?' done':''}`;
+  document.getElementById('ms-partner-dot').className = `ms-dot${partnerPicks!==null?' active':' pending'}`;
 
   // Progress cells
-  const pc_omar = document.getElementById('pc-omar');
-  const pc_marta = document.getElementById('pc-marta');
-  document.getElementById('pc-omar-lbl').textContent = `${omarName.charAt(0).toUpperCase()+omarName.slice(1)}'s Picks`;
-  document.getElementById('pc-marta-lbl').textContent = `${martaName.charAt(0).toUpperCase()+martaName.slice(1)}'s Picks`;
+  const pcMe = document.getElementById('pc-me');
+  const pcPartner = document.getElementById('pc-partner');
+  document.getElementById('pc-me-ico').textContent = USER.avatar||'👤';
+  document.getElementById('pc-me-lbl').textContent = 'My Picks';
+  document.getElementById('pc-partner-lbl').textContent = `${cap(partner)||'Partner'}'s Picks`;
 
-  if(ST.omar!==null){pc_omar.classList.add('done');document.getElementById('pv-omar').textContent=`${ST.omar.length} kept`;}
-  else{pc_omar.classList.remove('done');document.getElementById('pv-omar').textContent='Pending';}
-  if(ST.marta!==null){pc_marta.classList.add('done');document.getElementById('pv-marta').textContent=`${ST.marta.length} kept`;}
-  else{pc_marta.classList.remove('done');document.getElementById('pv-marta').textContent='Pending';}
+  if(myPicks!==null){pcMe.classList.add('done');document.getElementById('pv-me').textContent=`${myPicks.length} kept`;}
+  else{pcMe.classList.remove('done');document.getElementById('pv-me').textContent='Pending';}
+  if(partnerPicks!==null){pcPartner.classList.add('done');document.getElementById('pv-partner').textContent=`${partnerPicks.length} kept`;}
+  else{pcPartner.classList.remove('done');document.getElementById('pv-partner').textContent='Pending';}
 
-  const both=ST.omar!==null&&ST.marta!==null;
-  document.getElementById('btn-match').style.display=both?'flex':'none';
-  const pc_match=document.getElementById('pc-match');
-  if(both){pc_match.classList.add('done');document.getElementById('pv-match').textContent=ST.matches.length?`${ST.matches.length} meals`:'Ready';}
-  else{pc_match.classList.remove('done');document.getElementById('pv-match').textContent='—';}
+  const both = myPicks!==null && partnerPicks!==null;
+  document.getElementById('btn-match').style.display = both?'flex':'none';
+  const pcMatch = document.getElementById('pc-match');
+  if(both){pcMatch.classList.add('done');document.getElementById('pv-match').textContent=ST.matches.length?`${ST.matches.length} meals`:'Ready!';}
+  else{pcMatch.classList.remove('done');document.getElementById('pv-match').textContent='—';}
 
-  // Member status chips
-  const myPicks = ST[USER.name];
-  const partnerKey = USER.name === 'omar' ? 'marta' : 'omar';
-  const partnerPicks = ST[partnerKey];
-
-  // My chip
-  document.getElementById('ms-omar-avatar').textContent = USER.name==='omar' ? USER.avatar : '👨';
-  document.getElementById('ms-marta-avatar').textContent = USER.name==='marta' ? USER.avatar : '👩';
-  document.getElementById('ms-omar-name').textContent = USER.name==='omar' ? USER.name.charAt(0).toUpperCase()+USER.name.slice(1) : 'Omar';
-  document.getElementById('ms-marta-name').textContent = USER.name==='marta' ? USER.name.charAt(0).toUpperCase()+USER.name.slice(1) : 'Marta';
-
-  const omarDone = ST.omar !== null;
-  const martaDone = ST.marta !== null;
-  document.getElementById('ms-omar-state').textContent = omarDone ? `✓ ${ST.omar.length} kept` : 'Not swiped yet';
-  document.getElementById('ms-omar-state').className = `ms-state${omarDone?' done':''}`;
-  document.getElementById('ms-omar-dot').className = `ms-dot${omarDone?' active':' pending'}`;
-  document.getElementById('ms-marta-state').textContent = martaDone ? `✓ ${ST.marta.length} kept` : 'Not swiped yet';
-  document.getElementById('ms-marta-state').className = `ms-state${martaDone?' done':''}`;
-  document.getElementById('ms-marta-dot').className = `ms-dot${martaDone?' active':' pending'}`;
-
-  // Swipe button — labelled as current user
+  // Swipe button label
   const swipeBtn = document.getElementById('btn-swipe-self');
-  const myDone = ST[USER.name] !== null;
-  swipeBtn.textContent = myDone
-    ? `↺ Redo My Picks (${USER.avatar} ${USER.name.charAt(0).toUpperCase()+USER.name.slice(1)})`
-    : `Begin My Swipe Session (${USER.avatar} ${USER.name.charAt(0).toUpperCase()+USER.name.slice(1)})`;
+  swipeBtn.textContent = myPicks!==null
+    ? `${USER.avatar||'👤'} Redo My Picks`
+    : `${USER.avatar||'👤'} Begin My Swipe Session`;
+}
+
+function cap(s){ return s ? s.charAt(0).toUpperCase()+s.slice(1) : ''; }
+
+function getPartnerName(){
+  // Partner is any household member who is not me
+  const members = ST.members||[];
+  return members.find(m=>m!==USER.name) || 'partner';
+}
+
+function getPartnerInfo(){
+  // Try to get partner avatar from household data
+  const partner = getPartnerName();
+  const stored = JSON.parse(localStorage.getItem(`cs_member_${USER.householdId}_${partner}`)||'{}');
+  return { avatar: stored.avatar||'👤', name: partner };
 }
 
 function resetWeek(){
   if(!confirm('Reset this week\'s selections?')) return;
-  ST={...ST,pool:getPool(ST.weekKey),omar:null,marta:null,matches:[],plan:{},checked:{},shopList:{}};
+  ST={...ST,pool:getPool(ST.weekKey),picks:{},members:[],matches:[],plan:{},checked:{},shopList:{}};
   saveWeek(); updateHome(); showS('home');
 }
 
@@ -1946,7 +2007,7 @@ function initApp(){
   // Poll for partner's picks every 15 seconds when both haven't finished
   if(pollInterval) clearInterval(pollInterval);
   pollInterval = setInterval(()=>{
-    if(ST.omar===null || ST.marta===null) pollPartnerStatus();
+    if(!ST.picks?.[USER.name] || !ST.picks?.[getPartnerName()]) pollPartnerStatus();
   }, 15000);
 }
 
